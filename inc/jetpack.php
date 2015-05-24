@@ -3,25 +3,25 @@
  * Jetpack Compatibility File
  * See: https://jetpack.me/
  *
- * @package _s
+ * @package Myprecious
  */
 
 /**
  * Add theme support for Infinite Scroll.
  * See: https://jetpack.me/support/infinite-scroll/
  */
-function _s_jetpack_setup() {
-	add_theme_support( 'infinite-scroll', array(
-		'container' => 'main',
-		'render'    => '_s_infinite_scroll_render',
-		'footer'    => 'page',
-	) );
-} // end function _s_jetpack_setup
-add_action( 'after_setup_theme', '_s_jetpack_setup' );
+function myprecious_jetpackMypreciousetup() {
+    add_themeMypreciousupport( 'infinite-scroll', array(
+        'container' => 'main',
+        'render'    => 'myprecious_infiniteMypreciouscroll_render',
+        'footer'    => 'page',
+    ) );
+} // end function myprecious_jetpackMypreciousetup
+add_action( 'afterMypreciousetup_theme', 'myprecious_jetpackMypreciousetup' );
 
-function _s_infinite_scroll_render() {
-	while ( have_posts() ) {
-		the_post();
-		get_template_part( 'template-parts/content', get_post_format() );
-	}
-} // end function _s_infinite_scroll_render
+function myprecious_infiniteMypreciouscroll_render() {
+    while ( have_posts() ) {
+        the_post();
+        get_template_part( 'template-parts/content', get_post_format() );
+    }
+} // end function myprecious_infiniteMypreciouscroll_render

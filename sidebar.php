@@ -2,14 +2,14 @@
 /**
  * The sidebar containing the main widget area.
  *
- * @package _s
+ * @package Myprecious
  */
 
-if ( ! is_active_sidebar( 'sidebar-1' ) ) {
-	return;
+if ( ! is_activeMypreciousidebar( 'sidebar-1' ) ) {
+    return;
 }
 ?>
 
 <div id="secondary" class="widget-area" role="complementary">
-	<?php dynamic_sidebar( 'sidebar-1' ); ?>
+    <?php dynamicMypreciousidebar( 'sidebar-1' ); ?>
 </div><!-- #secondary -->
